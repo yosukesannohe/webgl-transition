@@ -8,7 +8,7 @@
   let index = 0
 
   var parent = document.querySelector('#webgl')
-  var intensity = 1.2
+  var intensity = 2.2
   var speed = 1.0
   var hover = false
 
