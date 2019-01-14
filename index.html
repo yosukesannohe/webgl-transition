@@ -22,14 +22,45 @@
     }
 
     #webgl {
-      width: 400px;
-      height: 400px;
+      width: 90vmin;
+      height: 90vmin;
       background: #9cc;
+    }
+
+    #ctrl {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      list-style-type: none;
+
+
+      display: none;
+    }
+
+    #ctrl > li {
+      flex-grow: 1;
+      background: #000000;
+    }
+
+    #ctrl > li > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      color: #ffffff;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
   <div id="webgl"></div>
+
+  <ul id="ctrl"></ul>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.js"></script>
